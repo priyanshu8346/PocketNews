@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PocketNews/static/css/main.abd64e84.css",
+    "main.js": "/PocketNews/static/js/main.cd3dabab.js",
+    "static/js/787.4c026eef.chunk.js": "/PocketNews/static/js/787.4c026eef.chunk.js",
+    "index.html": "/PocketNews/index.html",
+    "main.abd64e84.css.map": "/PocketNews/static/css/main.abd64e84.css.map",
+    "main.cd3dabab.js.map": "/PocketNews/static/js/main.cd3dabab.js.map",
+    "787.4c026eef.chunk.js.map": "/PocketNews/static/js/787.4c026eef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.cd3dabab.js"
+  ]
+}
