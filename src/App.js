@@ -15,7 +15,7 @@ const categories = [
   'science'
 ]
 const App = () => {
-  const api = 'oh__va_kvNPcxk7aO4wHucNH5YRdtrJmt3Z3nWSqGHg';
+  const api = '2dfeedbef442488b88805fe02f811547';
   // "4e4f45ad8dee4db5a1cebcf6d204b476";
 
   const [progress, setProgress] = useState(0);
