@@ -12,7 +12,7 @@ const News = (props) => {
 
   const updateNews = async () => {
     if (page === 0) props.setProgress(0);
-    let url = `https://api.newscatcherapi.com/v2/search?q=${props.category}&page=${page+1}&page_size=${props.pageSize}`
+    let url = `https://newsapi.org/v2/top-headlines?country=in&category=${props.category}&page=${page+1}&page_size=${props.pageSize}`
     setLoading(true);
     let data = await fetch(url, {
       method: 'GET', 
@@ -65,19 +65,19 @@ const News = (props) => {
                   <NewsItem
                     title={element.title}
                     description={
-                      element.summary
-                        ? element.summary.slice(0, 45) + "..."
+                      element.description
+                        ? element.description.slice(0, 45) + "..."
                         : "description not available"
                     }
                     imageUrl={
-                      element.media
-                        ? element.media
+                      element.urlToImage
+                        ? element.urlToImage
                         : "https://www.91-cdn.com/hub/wp-content/uploads/2022/01/iphone-13-mini-image-feat.jpg"
                     }
-                    newsUrl={element.link}
+                    newsUrl={element.url}
                     author={element.author}
-                    date={element.published_date}
-                    sourceName={element.clean_url}
+                    date={element.publishedAt}
+                    sourceName={element.source.name}
                   />
                 </div>
               );
